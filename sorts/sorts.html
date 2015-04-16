@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>sorts</title>
+	<link rel="icon" type="image/x-icon" href="sort.jpg" />
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="sorts.css" />
+	<script src="sorts.js"></script>
+</head>
+<body>
+	<div class="container text-center">
+		<div class="hero-unit">
+			<div class="header">
+				<h1>It's My Sorts !</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span12">
+				<p><strong><i>请输入想要排序的数字数组，相邻数字用空格隔开</i></strong></p>
+				<form>
+					<textarea id="data"></textarea>
+					<div>
+						<input type="reset" value="清空" />
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span4">
+				<button class="btn btn-info btn-large" id="btnPopup">Popup Sort</button>
+				<div id="popup" class="divHeight"></div>
+			</div>
+			<div class="span4">
+				<button class="btn btn-info btn-large" id="btnQuick">Quick Sort</button>
+				<div id="quick" class="divHeight"></div>
+			</div>
+			<div class="span4">
+				<button class="btn btn-info btn-large" id="btnMerge">Merge Sort</button>
+				<div id="merge" class="divHeight"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
