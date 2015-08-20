@@ -1,3 +1,3 @@
 # shareAnything
 share it to little Ju
-a little algorithm
+1. a little algorithm
