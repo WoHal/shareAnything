@@ -15,12 +15,17 @@ function buildMaxHeap(arr, len) {
 function heapify(arr, i, len) {
     const left = 2 * i + 1;
     const right = 2 * i + 2;
+    let largest = i;
 
-    if (left < len && arr[i] < arr[left]) {
-        swap(arr, i, left);
+    if (left < len && arr[largest] < arr[left]) {
+        largest = left;
     }
-    if (right < len && arr[i] < arr[right]) {
-        swap(arr, i, right);
+    if (right < len && arr[largest] < arr[right]) {
+        largest = right;
+    }
+    if (largest !== i) {
+        swap(arr, i, largest);
+        heapify(arr, largest, len);
     }
 }
 
